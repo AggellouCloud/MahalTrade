@@ -27,6 +27,7 @@ import SecurityController from "../controllers/SecurityController";
 import Database_MahalTrade_db from "./Database_MahalTrade_db.js";
 
 // Controllers
+import ProductController from "../controllers/MahalTrade_db/ProductController";
 import UserController from "../controllers/MahalTrade_db/UserController";
 
 // End Import Controllers
@@ -108,6 +109,7 @@ class Server {
     SecurityController.init(router);
 
     // Start Init Controllers
+		ProductController.init(router);
 		UserController.init(router);
 		 // End Init Controllers
 

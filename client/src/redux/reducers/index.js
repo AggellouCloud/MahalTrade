@@ -1,7 +1,10 @@
 import { combineReducers } from "redux";
 
 // START IMPORT REDUCERS
+import AccessReducer from "./AccessReducer";
 import HomeReducer from "./HomeReducer";
+import ProductEditReducer from "./ProductEditReducer";
+import ProductListReducer from "./ProductListReducer";
 
 // END IMPORT REDUCERS
 
@@ -21,7 +24,10 @@ const rootReducer = combineReducers({
   UserListReducer,
 
   // START COMBINE REDUCERS
+	AccessReducer,
 	HomeReducer,
+	ProductEditReducer,
+	ProductListReducer,
  // END COMBINE REDUCERS
 
 });

@@ -7,6 +7,7 @@ import properties from "../properties.js";
 
 // Start Import Models
 
+import ProductModel from "../models/MahalTrade_db/ProductModel";
 import UserModel from "../models/MahalTrade_db/UserModel";
 
 // End Import Models
@@ -23,6 +24,7 @@ class Database {
 
     // Start Init Models
 
+		ProductModel.init();
 		UserModel.init();
  // End Init Models
   }

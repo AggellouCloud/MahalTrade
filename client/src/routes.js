@@ -9,6 +9,9 @@ import Paper from "@material-ui/core/Paper";
 
 /* START MY VIEWS IMPORT */
 
+import Access from "./pages/Access";
+import ProductEdit from "./pages/ProductEdit";
+import ProductList from "./pages/ProductList";
 
 /* END MY VIEWS IMPORT */
 
@@ -38,6 +41,9 @@ class Routes extends Component {
 
               {/* START MY VIEWS */}
 
+              <PrivateRoute exact path="/access" component={ Access }  />
+              <PrivateRoute exact path="/products/:id" component={ ProductEdit }  />
+              <Route exact path="/products" component={ ProductList }  />
 
              {/* END MY VIEWS */}
 
